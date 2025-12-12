@@ -40,47 +40,42 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 // ];
 
 export const PROJECTS = [
+
   {
-    image: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/588/507/datas/original.PNG',
-    title: "Youtube Clone",
+     image: 'https://miro.medium.com/v2/resize:fit:1200/1*YJJ7DO7wqAvMleH3MCUBuw.png',
+    title: "Abhi Bus",
     description:
-      "Developed a YouTube clone using HTML, CSS, and JavaScript, implementing features like video playback, search functionality, and user interactions",
-    technologies: ["HTML", "CSS", "javascript"],
-    url:"https://manishloginn.github.io/Youtube-clone/",
-  },
-  {
-    image: "https://screenshots.codesandbox.io/6ccrm9/0.png",
-    title: "Blinkit-Clone",
-    description:
-      "Developed a Blinkit clone using React, focusing on product listing, search functionality, and shopping cart management.",
-    technologies: ["HTML", "CSS", "React", "Redux"],
-    url :"https://blinkit-full-stack.onrender.com/",
-  },
-  {
-    image:"https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-site-of-the-front-end-developer-Ian-Dunkerley-1024x481.webp",
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
-    url : "google.com",
-  },
-  {
-    image : "https://media.gcflearnfree.org/content/55e073de7dd48174331f51b3_01_17_2014/getting_started_interactive2.png",
-    title: "Google Sheet",
-    description:
-      "Built an Excel sheet clone with HTML, CSS, and JavaScript, replicating core spreadsheet functionalities including cell selection, data entry, and formula calculations.",
-    technologies: ["HTML", "CSS", "Javascript"],
-    url : "https://manishloginn.github.io/EXCEL-SPREADSHEET/"
+      "• Contributed to a team of 10 in a collaborative project • responsive design to ensure compatibility across all devices • Utilized Node.js to create a robust backend, handling server-side logic and database interactions • Managed version control with Git, maintaining a clean and organized codebase",
+    technologies: ["ReactJS", "Node.js", "Redux Toolkit", "Express", "Git", "HTML", "CSS", "javascript"],
+    url:"",
 
   },
-  {
-    image:"https://repository-images.githubusercontent.com/407926849/1d9819d6-41ec-4e8b-82e6-f153f97f1a28",
-    title: "Quiz Game",
+   {
+     image: 'https://binarychai.com/wp-content/uploads/2020/11/OYO-1300-x-870B.jpg',
+    title: "Hotel Booking Application",
     description:
-      "Developed an interactive quiz website using HTML, CSS, and JavaScript, which allows users to test their knowledge on various topics through multiple-choice questions",
-    technologies: ["HTML", "CSS", "Javascript"],
-    url : "https://manishloginn.github.io/F2_CONTEST3/",
+      "• Developed a user-friendly hotel booking application, contributing to a team of 2 in an agile environment • Created a robust backend using Node.js, managing authentication and database interactions with MongoDB, • Utilized Redux Toolkit for effective state management, improving application performance and scalability",
+    technologies: ["ReactJS", "Node.js", "Redux Toolkit", "Express", "Git", "HTML", "CSS", "javascript"],
+    url:"https://hotel-booking-frontend-red.vercel.app/",
+
   },
+   {
+     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhOUtChg9W0wzKtYlDYWmopTq9QTuxI9BQg&s',
+    title: "CLUB BOOKING PLATFORM",
+    description:
+      "Built an interactive and high-performance Next.js frontend with server-side rendering for faster load times and better SEO. • Implemented user flows for browsing clubs, checking availability, selecting time slots, placing bookings, and making payments. • Integrated a secure payment gateway (UPI/Card) to enable frictionless online transactions during booking. • Ensured smooth booking updates with efficient backend workflows and consistent data flow across user and admin panels.",
+    technologies: ["ReactJS", "Node.js", "Redux Toolkit", "Express", "Git", "HTML", "CSS", "javascript"],
+    url:"https://club-omega.vercel.app/",
+
+  },
+  // {
+  //   image:"https://repository-images.githubusercontent.com/407926849/1d9819d6-41ec-4e8b-82e6-f153f97f1a28",
+  //   title: "Quiz Game",
+  //   description:
+  //     "Developed an interactive quiz website using HTML, CSS, and JavaScript, which allows users to test their knowledge on various topics through multiple-choice questions",
+  //   technologies: ["HTML", "CSS", "Javascript"],
+  //   url : "https://manishloginn.github.io/F2_CONTEST3/",
+  // },
 ];
 
 export const CONTACT = {

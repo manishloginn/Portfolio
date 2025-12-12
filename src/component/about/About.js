@@ -1,55 +1,53 @@
-import React from 'react'
-import MyPhoto from "../../Assets/image.png"
-import "./about.css"
-import { BiFolder, BiMedal, BiUser } from 'react-icons/bi'
+import React from 'react';
+import MyPhoto from "../../Assets/image.png";
+import "./about.css";
+import { BiFolder, BiMedal, BiUser } from 'react-icons/bi';
 
 function About() {
     return (
         <section id='about'>
             <h5>Get to know</h5>
             <h2>About Me</h2>
-            <br />
-            <br />
 
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={MyPhoto} alt="A headshot of Arun" />
+                        <img src={MyPhoto} alt="My headshot" />
                     </div>
                 </div>
+
                 <div className="about__content">
                     <div className="about__cards">
                         <article className='about__card'>
                             <BiMedal className='about__icon' />
                             <h5>Experience</h5>
-                            <small>1000+ Hours of dedicated coding practice & 100+ hours of soft skills training</small>
+                            <small>2.5+ years hands-on Full Stack Web Development experience (MERN Stack)</small>
                         </article>
+
                         <article className='about__card'>
                             <BiUser className='about__icon' />
                             <h5>Education</h5>
-                            <small>Acciojob Coding School Gurgaon(India) <br />Full Stack Web Development</small>
+                            <small> MCA [Online] Uttaranchal University 2024-2026, <br/> Bachelor of Arts (Delhi University)2019-2023</small>
                         </article>
+
                         <article className='about__card'>
                             <BiFolder className='about__icon' />
-                            <h5>Hobbies</h5>
-                            <small>Traveling, Playing cricket, Music </small>
+                            <h5>Skills & Hobbies</h5>
+                            <small>MERN Stack, NestJS, ReactJS, Node.js, MongoDB, AWS, AI Integration, Traveling, Music</small>
                         </article>
                     </div>
+
                     <p>
-                        An aspiring software developer with knowledge in software development practices such as coding, testing, code reviews, code comments, etc. Strong ability to communicate with clients and ability to
-                        express ideas clearly and concisely. I have a strong passion for both front-end
-                        and back-end development. I love to learn and I am always looking to learn
-                        and experiment with new technologies!
+                        I am a passionate Full Stack Developer with 2.5 years of hands-on experience in building scalable web applications
+                        using the MERN stack. I have strong problem-solving skills, love learning new technologies, and enjoy experimenting
+                        with innovative solutions. I am detail-oriented, quick learner, and have a strong ability to communicate effectively.
                     </p>
 
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>
             </div>
-<br />
-<br />
-
         </section>
     )
 }
 
-export default About
+export default About;

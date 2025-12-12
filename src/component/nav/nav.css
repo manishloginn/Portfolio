@@ -1,31 +1,65 @@
+/* Navbar container */
 nav {
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.7rem 1.5rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  z-index: 999;
+  transition: all 0.3s ease;
 }
 
+/* Individual links */
 nav a {
-   background: transparent;
-   padding: 0.8rem; 
-   border-radius: 50%;
-   display: flex;
-   color: var(--color-light);
-   font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
+/* Hover effect */
 nav a:hover {
-    background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  color: #007bff;
 }
 
-a.active {
-  color: #007bff; /* Color for active link */
+/* Active link */
+nav a.active {
+  color: #007bff;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.15);
+}
+
+/* Tooltip customization */
+.react-tooltip {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 576px) {
+  nav {
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    gap: 0.6rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
 }

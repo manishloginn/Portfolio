@@ -1,0 +1,133 @@
+/* SECTION WRAPPER */
+.exp-section {
+  padding: 70px 20px;
+  background: transparent;
+  color: #fff;
+}
+
+/* TITLE */
+.exp-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.exp-header h5 {
+  color: #4db5ff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.exp-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* TIMELINE WRAPPER */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+
+/* TIMELINE ITEM */
+.timeline-item {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 50px;
+  position: relative;
+  animation: slideIn 0.7s ease forwards;
+  opacity: 0;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* TIMELINE NODE */
+.timeline-icon {
+  min-width: 55px;
+  height: 55px;
+  background: rgba(77, 181, 255, 0.1);
+  border: 2px solid #4db5ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4db5ff;
+  font-size: 25px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 18px rgba(77, 181, 255, 0.4);
+}
+
+/* TIMELINE VERTICAL LINE */
+.timeline-item .line {
+  content: "";
+  position: absolute;
+  left: 27px;
+  top: 60px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #4db5ff, transparent);
+  opacity: 0.7;
+}
+
+/* CONTENT BOX */
+.timeline-content {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.timeline-content:hover {
+  border-color: #4db5ff;
+  box-shadow: 0 0 20px rgba(77, 181, 255, 0.3);
+}
+
+/* HEADINGS */
+.timeline-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.exp-date {
+  color: #8ea1b0;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* LIST */
+.timeline-content ul {
+  padding-left: 20px;
+}
+
+.timeline-content li {
+  list-style: disc;
+  margin-bottom: 6px;
+  color: #d9d9d9;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .timeline-item .line {
+    left: 27px;
+  }
+}

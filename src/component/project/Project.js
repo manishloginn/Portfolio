@@ -1,46 +1,44 @@
-import React from 'react'
-// import { PROJECTS } from '../../constants'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import "./project.css"
-import { BsEye } from 'react-icons/bs';
+import React from 'react';
 import { PROJECTS } from '../../constants';
+import { BsEye } from 'react-icons/bs';
+import "./project.css";
 
 function Project() {
+  return (
+    <section id='portfolio' className='projecthed'>
+      <div className="project-header">
+        <h5>My Work</h5>
+        <h2>Projects</h2>
+      </div>
 
-
-
-    return (
-        <section id='portfolio' className='projecthed'>
-            <h5>My top</h5>
-            <h2>Projects</h2>
-            <br />
-            <br />
-            <br />
-
-            <div className='cartdiv'>
-                {
-                    PROJECTS.map((project, index) => {
-                        return (
-                            <Card className='carts ' key={index} >
-                                <Card.Img style={{borderRadius:"15px"}} variant="top" src={project.image} />
-                                <Card.Body className='cartbody'>
-                                    <Card.Title >{project.title}</Card.Title>
-                                    <p>Frontend Role</p>
-                                    <p>Tech Stacks : {project.technologies.join(', ')}</p>
-                                    <p> About {project.title} : </p>
-                                    <Card.Text> {project.description}
-                                    </Card.Text>
-                                    <Button as="a" href={project.url} className='bigeye' target="_blank" rel="noopener noreferrer"> <BsEye />  </Button>
-                                </Card.Body>
-                            </Card>
-                        )
-                    })
-                }
+      <div className='cartdiv'>
+        {PROJECTS.map((project, index) => (
+          <div className='carts' key={index}>
+            <div className="carts-image">
+              <img src={project.image} alt={project.title} />
             </div>
 
-        </section>
-    )
+            <div className='cartbody'>
+              <h5>{project.title}</h5>
+              <p className='role'>{project.role || "Full Stack Developer"}</p>
+
+              <div className='tech-stack'>
+                {project.technologies.map((tech, idx) => (
+                  <span key={idx} className='tech-badge'>{tech}</span>
+                ))}
+              </div>
+
+              <p className='description'>{project.description}</p>
+
+              <a href={project.url} target="_blank" rel="noopener noreferrer" className='bigeye'>
+                <BsEye />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
-export default Project
+export default Project;
