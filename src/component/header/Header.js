@@ -17,7 +17,7 @@ function Header() {
   <h5 className="text-light">
     <Typewriter
       options={{
-        strings: [ 'Full Stack Web Developer (MERN Stack)', 'Software Engineer | 2.5 Years Experience', "Quick Learner"],
+        strings: [ 'Full Stack Web Developer (MERN Stack)', 'Software Engineer | 2.5+ Years Experience', "Quick Learner"],
         autoStart: true,
         loop: true,
         delay: 80,
