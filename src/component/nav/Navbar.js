@@ -77,7 +77,7 @@ return (
         content="Contact"
         style={{ backgroundColor: "#ffffff", color: "#000000" }}
     />
-    <a id="resume-title" href='https://drive.google.com/file/d/1EUUTZxpL5t6V58blEQ-4h_F5ohI5TueR/view?usp=sharing' download>
+    <a id="resume-title" href='https://drive.google.com/file/d/1SchTLrQWp9NLYDpkQ4flbW9vGqWB-EvC/view?usp=sharing' download>
         <HiOutlineDocumentDownload />
 
     </a>
